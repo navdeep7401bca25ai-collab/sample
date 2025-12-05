@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2d6cdf">
+    <title>Login - AcmeERP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="is-loading">
+    <a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
+    <header class="site-header small" role="banner">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="../asset/image/rocket.png" alt="AcmeERP logo" class="logo-img">
+                <h1>AcmeERP</h1>
+            </div>
+            <nav class="main-nav" aria-label="Main Navigation">
+                
+                <div class="nav-links">
+                </div>
+                <div class="nav-actions" id="userMenu">
+                    <a href="index.html">Home</a>
+                    <!-- Filled by JS if logged in; no static login/register is shown -->
+                </div>
+                
+                <button class="mobile-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+                  <span class="hamburger"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container auth-container" role="main">
+        <div class="auth-card">
+            <img class="auth-logo" src="../asset/image/rocket.png" alt="AcmeERP"/>
+            <h2>Account login</h2>
+            <p class="auth-sub">Sign in to access your EduManager dashboard</p>
+            <form id="loginForm" class="auth-form">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required>
+
+            <button class="btn primary" type="submit">Login</button>
+            </form>
+            <div class="auth-footer">Don't have an account? <a href="register.html">Register now</a>.</div>
+        </div>
+    </main>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
