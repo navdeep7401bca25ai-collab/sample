@@ -1,0 +1,11 @@
+/* Price cards */
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.plan{background:var(--card-bg);border-radius:12px;padding:30px 22px;text-align:center;box-shadow:0 14px 36px rgba(12,18,36,0.06);transition:transform .28s cubic-bezier(.16,.87,.35,1),box-shadow .24s ease}
+.plan.featured{border:2px solid var(--primary);transform:translateY(-6px);box-shadow:0 26px 64px rgba(38,71,145,0.12)}
+.price{font-size:34px;margin:22px 0;color:var(--dark);font-weight:700}
+.plan ul{list-style:none;padding:0;margin:10px 0}
+.plan li{padding:8px 0;border-top:1px solid rgba(0,0,0,0.04);color:var(--muted)}
+.plan:hover{transform:translateY(-8px)}
+@media (max-width:760px){
+  .pricing-grid{grid-template-columns:1fr}
+}
