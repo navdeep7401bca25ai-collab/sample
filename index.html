@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2d6cdf">
+    <title>AcmeERP — Business Management Made Simple</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pricing.css">
+</head>
+<body class="is-loading">
+    <a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
+    <header class="site-header" role="banner">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="../asset/image/rocket.png" alt="AcmeERP logo" class="logo-img">
+                <h1>AcmeERP</h1>
+            </div>
+                        <nav class="main-nav" aria-label="Main Navigation">
+                            
+                            <div class="nav-links">
+                                <a href="#about">About</a>
+                                <a href="#modules">Modules</a>
+                                <a href="#pricing">Pricing</a>
+                                <a href="#contact">Contact</a>
+                            </div>
+                            <div class="nav-actions" id="userMenu">
+                                <!-- user menu populated by JS; for visitors, no login/register buttons show -->
+                            </div>
+                            
+                            <button class="mobile-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+                              <span class="hamburger"></span>
+                            </button>
+                        </nav>
+        </div>
+    </header>
+
+    <main id="main" role="main">
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1>Welcome to <strong>AcmeERP</strong></h1>
+                    <h3 class="hero-sub-title">Streamline Your School's Student Management</h3>
+                    <p class="hero-sub">A modern, professional solution for managing student data, attendance, and academic records with ease and efficiency.</p>
+                    <p class="hero-cta"><a class="btn primary" href="register.html">Get Started</a> <a class="btn" href="#pricing">View Pricing</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container about">
+            <h3>About AcmeERP</h3>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>AcmeERP provides a complete suite of tools to help companies streamline their operations — from accounting and HR to inventory, sales, and reporting. We’re focused on delivering efficiency with security, and outstanding customer service backed by 24/7 support.</p>
+                    <p>Our product supports multi-branch operations and advanced reporting tools that help make data-driven decisions quickly.</p>
+                </div>
+                <div class="about-image">
+                </div>
+            </div>
+
+            <!-- About cards: Who We Are, Why EduManager?, Our Commitment -->
+            <div class="about-cards">
+                <div class="about-card">
+                    <h4>Who We Are</h4>
+                    <p>We are a forward-thinking educational technology company committed to revolutionizing how schools manage student information and operations. Our team consists of experienced educators and developers working together to create solutions that matter.</p>
+                </div>
+                <div class="about-card">
+                    <img src="../asset/image/dashboad.png" alt="Why EduManager" class="about-card-icon"/>
+                    <h4>Why EduManager?</h4>
+                    <p>In today's digital age, schools need reliable tools for administrative tasks. EduManager removes the complexity of manual record-keeping and provides a centralized platform for student information, attendance, grading, and reporting.</p>
+                </div>
+                <div class="about-card">
+                    <img src="../asset/image/secure.png" alt="Our Commitment" class="about-card-icon"/>
+                    <h4>Our Commitment</h4>
+                    <p>We’re committed to providing user-friendly, secure, and scalable solutions that enhance operational efficiency and allow educators to focus on what matters most—student success.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="modules" class="container modules">
+            <h3>Key Modules</h3>
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="../asset/image/student.png" alt="Student Database">
+                    <h4>Student Database</h4>
+                    <p>Comprehensive student profiles with all essential information in one secure location.</p>
+                </div>
+                <div class="feature">
+                    <img src="../asset/image/student_add.png" alt="Registration">
+                    <h4>Easy Registration</h4>
+                    <p>Quick and intuitive interface to add and manage new student records effortlessly.</p>
+                </div>
+                <div class="feature">
+                    <img src="../asset/image/search.png" alt="Advanced Search">
+                    <h4>Advanced Search</h4>
+                    <p>Find any student instantly with powerful search and filtering capabilities.</p>
+                </div>
+                <div class="feature">
+                    <img src="../asset/image/dashboad.png" alt="Analytics Dashboard">
+                    <h4>Analytics Dashboard</h4>
+                    <p>Real-time statistics and insights about your student population and classes.</p>
+                </div>
+                <div class="feature">
+                    <img src="../asset/image/data-export.png" alt="Data Export">
+                    <h4>Data Export</h4>
+                    <p>Export student data to CSV format for reports and external processing.</p>
+                </div>
+                <div class="feature">
+                    <img src="../asset/image/secure.png" alt="Secure & Private">
+                    <h4>Secure & Private</h4>
+                    <p>Your data is securely stored with authentication and privacy protection.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="container pricing">
+            <h3>Pricing</h3>
+            <div class="pricing-grid">
+                <div class="plan">
+                    <h4>Basic</h4>
+                    <p class="price">$19<span>/mo</span></p>
+                    <ul>
+                        <li>Core Modules</li>
+                        <li>Up to 5 users</li>
+                        <li>Email Support</li>
+                    </ul>
+                    <a class="btn" href="register.html">Choose Basic</a>
+                </div>
+                <div class="plan featured">
+                    <h4>Standard</h4>
+                    <p class="price">$49<span>/mo</span></p>
+                    <ul>
+                        <li>All Basic Modules</li>
+                        <li>Up to 25 users</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <a class="btn primary" href="register.html">Choose Standard</a>
+                </div>
+                <div class="plan">
+                    <h4>Enterprise</h4>
+                    <p class="price">$149<span>/mo</span></p>
+                    <ul>
+                        <li>All Modules</li>
+                        <li>Unlimited users</li>
+                        <li>Dedicated Support</li>
+                    </ul>
+                    <a class="btn" href="register.html">Contact Sales</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container contact">
+            <h3>Contact Us</h3>
+            <div class="contact-grid">
+                <form id="contactForm" class="contact-form">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button class="btn primary" type="submit">Send Message</button>
+                </form>
+                <div class="contact-card">
+                    <img src="../asset/image/support.png" alt="Support">
+                    <p>For sales inquiries, contact <strong>sales@acmeerp.example</strong>. Our support is available 24/7.</p>
+                    <ul>
+                        <li>Phone: +1 (555) 123-456</li>
+                        <li>Address: 123 Business Drive, City, Country</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-card">
+            <div class="footer-grid">
+                <div class="footer-col brand">
+                    <div class="footer-logo">
+                        <img src="../asset/image/rocket.png" alt="AcmeERP logo" class="footer-logo-img"/>
+                        <h4>EduManager</h4>
+                    </div>
+                    <p class="tagline">Professional Student Management System for Schools</p>
+                </div>
+                <div class="footer-col quick-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#modules">Features</a></li>
+                        <li><a href="login.html">Student Portal</a></li>
+                        <li><a href="#">Admin Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:info@edumanager.com">info@edumanager.com</a></p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: Education Hub, Tech City</p>
+                </div>
+            </div>
+            <hr class="footer-sep">
+            <div class="footer-bottom center muted">© 2025 AcmeERP. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>
